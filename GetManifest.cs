@@ -72,7 +72,7 @@ namespace GetManifestTest
 
                     if (item.ParentNode.Name == "SVCResource" && item.InnerText.Contains(".mxd"))
 
-                        mxdPath = item.InnerText;
+                        mxdPath = item.InnerText; //Store the MXD path in this variable
 
                 }
 
@@ -80,7 +80,7 @@ namespace GetManifestTest
 
             MessageBox.Show(mxdPath);
 
-
+			//Code to access AGS Server Logs @ 10.1 +
             //String token = GetToken(m_token);
             //string logresponse = GetLog(m_logurl, token);
             //MessageBox.Show(logresponse.ToString());   
