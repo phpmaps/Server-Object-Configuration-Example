@@ -17,6 +17,8 @@ using System.Net;
 using System.Web.Script.Serialization;
 
 
+//Add-in code for 10.1 ArcCatalog and Server
+
 namespace GetManifestTest
 {
     public class GetManifest : ESRI.ArcGIS.Desktop.AddIns.Button
@@ -79,10 +81,12 @@ namespace GetManifestTest
             }
 
             MessageBox.Show(mxdPath);
-
-			//Code to access AGS Logs @ 10.1 +
+			
+			
             //String token = GetToken(m_token);
+			
             //string logresponse = GetLog(m_logurl, token);
+			
             //MessageBox.Show(logresponse.ToString());   
         }
 
